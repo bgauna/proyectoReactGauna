@@ -1,0 +1,20 @@
+.reset{
+    padding:0;
+    margin:0;
+}
+.carrito{
+    color: yellow;
+    display: inline-block;
+    background-color: grey;
+}
+.nroCarrito{
+    border-radius: 50%;
+    background-color: red;
+    display: inline-block;
+}
+.iconoCarrito{
+    display: inline-block;
+}
+.textoCarrito{
+    display: inline-block;
+}
