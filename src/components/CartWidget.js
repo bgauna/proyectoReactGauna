@@ -1,16 +1,26 @@
 import './CartWidget.css';
 
 const CartWidget = () => {
-  const medidas=30;
-  const medidasNro={
-    width:medidas,
-    height:medidas,
-    };
+  const cantProductos=100;
+  let cantCarrito=0;
+  let medidas = 0;
+  const medidasNro={};
+  if(cantProductos<100) {
+    medidas=45;
+    cantCarrito=cantProductos;
+    medidasNro.width=medidas;
+    medidasNro.height=medidas;
+  } else {
+    medidas=45;
+    cantCarrito='+99';
+    medidasNro.width=medidas*1.4;
+    medidasNro.height=medidas;
+  }
 
   return (
-    <div className='carrito reset d-flex justify-content-center align-items-center p-2'>
-        <i className="fa-solid fa-cart-arrow-down fa-2x iconoCarrito reset"></i>
-        <div className='nroCarrito reset d-flex justify-content-center align-items-center' style={medidasNro}><p className='textoCarrito reset'>4</p></div>
+    <div className='carrito reset d-flex justify-content-center align-items-center p-3'>
+        <i className="fa-solid fa-cart-arrow-down fa-3x iconoCarrito reset"></i>
+        <div className='nroCarrito reset d-flex justify-content-center align-items-center' style={medidasNro}><p className='textoCarrito reset align-self-center pb-1'>{cantCarrito}</p></div>
     </div>
   )
 }

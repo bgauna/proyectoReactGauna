@@ -1,3 +1,7 @@
 .displayInlineblock{
     display: inline-block;
 }
+.decoration-none{
+    text-decoration: none;
+    list-style:none;
+}
