@@ -1,4 +1,5 @@
 //Aún lo estoy probando, no sé cómo hacerlo funcionar todavía
+import './ElementosDeLista.css';
 
 const ElementosDeLista = ({props}) => {
     let menuHTML=`<ul class='d-flex align-items-center decoration-none'>`;

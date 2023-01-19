@@ -5,3 +5,11 @@
     text-decoration: none;
     list-style:none;
 }
+.active{
+    color:red;
+    padding:5px;
+}
+.inactive{
+    color:blue;
+    padding:5px;
+}
