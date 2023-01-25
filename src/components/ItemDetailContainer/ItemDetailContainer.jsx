@@ -127,7 +127,7 @@ const ItemDetailContainer = () => {
         setGetProduct(listaCursos[id-1])
         console.log(getProduct);
     },[id])
-
+    
    return (
     <div>
                 <Link to='/'>Volver</Link>
